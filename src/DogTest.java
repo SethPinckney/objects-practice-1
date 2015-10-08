@@ -33,7 +33,7 @@ public class DogTest {
 		Dog spot = new Dog();
 		assertEquals("dog should say \"woof!\"", "woof!", spot.makeSound());
 	}
-	
+
 	@Test
 	public void dog_says_zzzz_when_sleeping() {
 		Dog spot = new Dog();

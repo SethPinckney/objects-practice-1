@@ -20,13 +20,13 @@ public class ShoppingCartTest {
 		ShoppingCart cart = new ShoppingCart();
 		assertEquals("totalAmountOwed should start at zero", 0.0, cart.getTotalAmountOwed(), ALLOWED_DELTA);
 	}
-	
+
 	@Test
 	public void averagePricePerItem_starts_at_zero() {
 		ShoppingCart cart = new ShoppingCart();
 		assertEquals("averagePricePerItem should start at zero", 0.0, cart.getAveragePricePerItem(), ALLOWED_DELTA);
 	}
-	
+
 	@Test
 	public void totalNumberOfItems_tracks_the_number_of_items_added_to_the_cart() {
 		ShoppingCart cart = new ShoppingCart();
@@ -35,7 +35,7 @@ public class ShoppingCartTest {
 		cart.addItems(4, 1.00);
 		assertEquals(9, cart.getTotalNumberOfItems());
 	}
-	
+
 	@Test
 	public void totalAmountOwed_tracks_the_total_amount_owed_for_all_items_added_to_the_cart() {
 		ShoppingCart cart = new ShoppingCart();
@@ -44,7 +44,7 @@ public class ShoppingCartTest {
 		cart.addItems(4, 5.75);
 		assertEquals(56.00, cart.getTotalAmountOwed(), ALLOWED_DELTA);
 	}
-	
+
 	@Test
 	public void averagePricePerItem_calculates_the_average_price_of_items_added_to_the_cart() {
 		ShoppingCart cart = new ShoppingCart();
